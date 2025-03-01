@@ -2,7 +2,7 @@ import json
 import requests
 
 
-class Ingestiones():
+class Actividad_1():
     def __init__(self):
         self.ruta_static="src/pad/static/"
 
@@ -14,8 +14,8 @@ class Ingestiones():
        pass
 
 
-#creamos una instancia de la clase Ingestiones
-ingestiones=Ingestiones()
+#creamos una instancia de la clase Actividad_1
+ingestiones=Actividad_1()
 # Para obtener la división administrativa de un país en particular, simplemente realice una solicitud GET a
 datos_json = ingestiones.leer_api("https://rawcdn.githack.com/kamikazechaser/administrative-divisions-db/master/api/KE.json")
 print("esta es la ruta statica :",ingestiones.ruta_static)
