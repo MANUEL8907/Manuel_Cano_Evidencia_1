@@ -20,5 +20,4 @@ ingestiones=Ingestiones()
 datos_json = ingestiones.leer_api("https://rawcdn.githack.com/kamikazechaser/administrative-divisions-db/master/api/KE.json")
 print("esta es la ruta statica :",ingestiones.ruta_static)
 print("datos json:",datos_json) 
-
     
