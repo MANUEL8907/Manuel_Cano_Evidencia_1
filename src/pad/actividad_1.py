@@ -17,11 +17,11 @@ class Actividad_1():
         
         with open(ruta_json,"w", encoding="utf-8") as f:
             json.dump(datos_json,f,ensure_ascii=False,indent=4)
-            print(f"El archivo {nombre_archivo} se ha creado correctamente en json")
+            print(f"El archivo {nombre_archivo} se ha creado correctamente en JSON")
             return True
         
        except Exception as e:
-           print(f"Error al escribir el archivo {nombre_archivo} en json")
+           print(f"Error al escribir el archivo {nombre_archivo} en JSON")
            print(e)
            return False
           
@@ -47,7 +47,7 @@ ingestiones=Actividad_1()
 datos_json = ingestiones.leer_api("https://rawcdn.githack.com/kamikazechaser/administrative-divisions-db/master/api/KE.json")
 print("datos_json:",datos_json)
 if ingestiones.escribir_json("datos.json",datos_json):
-    print("El archivo se ha creado correctamente en txt")
+    print("El archivo se ha creado correctamente en JSON")
 
 
 
