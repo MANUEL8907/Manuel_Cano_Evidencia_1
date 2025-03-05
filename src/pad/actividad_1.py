@@ -1,6 +1,7 @@
 import json
 import requests
 import sys 
+import os   
 
 class Actividad_1():
     def __init__(self):
@@ -12,7 +13,12 @@ class Actividad_1():
         return response.json()
         
     def escribir_json(self,nombre_archivo, datos_json):
-       ruta_json= f"{self.ruta_static}/json/{nombre_archivo}"
+       ruta_json_dir= f"{self.ruta_static}/json"
+       ruta_json= f"{ruta_json_dir}/{nombre_archivo}"
+
+
+       os.makedirs(ruta_json_dir, exist_ok=True)
+       
        try:
         
         with open(ruta_json,"w", encoding="utf-8") as f:
