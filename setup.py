@@ -12,7 +12,8 @@ setup(
     install_requires=[
         "pandas",
         "requests",
-        "matplotlib"
+        "matplotlib",
+        "xlsxwriter"
     ]
     
     
